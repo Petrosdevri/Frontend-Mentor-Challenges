@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&display=swap');
+
+// Variables
+$font-family1: 'Barlow', sans-serif;
+$theme-color: #fff;
+
+
+.container {
+    background-color: $theme-color;
+
+    h1 {
+        font-family: $font-family1;
+    }
+
+    p {
+        font-family: 'Fraunces', serif;
+
+        a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                color: #4169e1;
+            }
+        }
+    }
+
+    .projects-table {
+        div > div {
+            .card-title {
+                font-size: 1.35rem;
+            }
+
+            .card-subtitle {
+                .html-btn {
+                    background-color: #E34F26;
+                    color: #fff;
+                    &:hover {
+                        background-color: #c43c1f;
+                    }
+                }
+                .css-btn {
+                    background-color: #1572B6;
+                    color: #fff;
+                    &:hover {
+                        background-color: #1f3bc4;
+                    }
+                }
+            }
+        }
+    }
+}

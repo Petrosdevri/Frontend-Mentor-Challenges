@@ -1,0 +1,23 @@
+{
+  "name": "frontend-mentor-challenges",
+  "version": "1.0.0",
+  "description": "My solutions to the Frontend Mentor Challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petrosdevri/Frontend-Mentor-Challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petrosdevri/Frontend-Mentor-Challenges/issues"
+  },
+  "homepage": "https://github.com/Petrosdevri/Frontend-Mentor-Challenges#readme",
+  "dependencies": {
+    "sass": "^1.59.2"
+  }
+}

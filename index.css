@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&display=swap");
+.container {
+  background-color: #fff;
+}
+.container h1 {
+  font-family: "Barlow", sans-serif;
+}
+.container p {
+  font-family: "Fraunces", serif;
+}
+.container p a {
+  color: #000;
+  text-decoration: none;
+}
+.container p a:hover {
+  color: #4169e1;
+}
+.container .projects-table div > div .card-title {
+  font-size: 1.35rem;
+}
+.container .projects-table div > div .card-subtitle .html-btn {
+  background-color: #E34F26;
+  color: #fff;
+}
+.container .projects-table div > div .card-subtitle .html-btn:hover {
+  background-color: #c43c1f;
+}
+.container .projects-table div > div .card-subtitle .css-btn {
+  background-color: #1572B6;
+  color: #fff;
+}
+.container .projects-table div > div .card-subtitle .css-btn:hover {
+  background-color: #1f3bc4;
+}
+
+/*# sourceMappingURL=index.css.map */
