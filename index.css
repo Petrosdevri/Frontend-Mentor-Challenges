@@ -19,49 +19,19 @@
 .container .projects-table div > div .card-title {
   font-size: 1.35rem;
 }
-.container .projects-table div > div .card-subtitle div > button {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 0.8rem;
-}
-.container .projects-table div > div .card-subtitle div > .html-btn {
+.container .projects-table div > div .card-subtitle .html-btn {
   background-color: #E34F26;
   color: #fff;
 }
-.container .projects-table div > div .card-subtitle div > .html-btn:hover {
+.container .projects-table div > div .card-subtitle .html-btn:hover {
   background-color: #c43c1f;
 }
-.container .projects-table div > div .card-subtitle div > .css-btn {
+.container .projects-table div > div .card-subtitle .css-btn {
   background-color: #1572B6;
   color: #fff;
 }
-.container .projects-table div > div .card-subtitle div > .css-btn:hover {
+.container .projects-table div > div .card-subtitle .css-btn:hover {
   background-color: #1f3bc4;
 }
-.container .projects-table div > div .card-subtitle div > .js-btn {
-  background-color: #F7DF1E;
-  color: #000;
-}
-.container .projects-table div > div .card-subtitle div > .js-btn:hover {
-  background-color: #E6C91A;
-}
-.container .projects-table div > div .card-subtitle div > .bootstrap-btn {
-  background-color: #7952B3;
-  color: #fff;
-}
-.container .projects-table div > div .card-subtitle div > .bootstrap-btn:hover {
-  background-color: #4A336E;
-}
-.container .projects-table div > div .card-subtitle div > .scss-btn {
-  background-color: #CC6699;
-  color: #fff;
-}
-.container .projects-table div > div .card-subtitle div > .scss-btn:hover {
-  background-color: #B84D7F;
-}
-.container .projects-table div > div .card-subtitle div > .react-btn {
-  background-color: #61DAFB;
-  color: #000;
-}
-.container .projects-table div > div .card-subtitle div > .react-btn:hover {
-  background-color: #4fc8e9;
-}/*# sourceMappingURL=index.css.map */
+
+/*# sourceMappingURL=index.css.map */
