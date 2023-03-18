@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,700");
+
+html body {
+    background: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+
+    .container {
+        .rating-component {
+            background: hsl(213, 19%, 18%);
+            width: 420px;
+            height: 375px;
+            border-radius: 10%;
+            margin: 100px auto;
+
+            .wrapper {
+                margin: 40px;
+
+                #star {
+                    width: 40px;
+                    height: 40px;
+                    background: hsl(213, 19%, 25%, 1);
+                    border-radius: 50%;
+                }
+
+                .title {
+                    color: hsl(0, 0%, 100%);
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+
+                .description {
+                    font-size: 15px;
+                }
+
+                .rating {
+                    margin-block-end: 5px;
+
+                    .rating-circle {
+                        width: 50px;
+                        height: 50px;
+                        background: hsl(213, 19%, 25%, 1);
+                        border-radius: 50%;
+
+                        &:hover {
+                            background:hsl(25, 97%, 53%);
+                            color: hsl(0, 0%, 100%);
+                            cursor: pointer;
+                        }
+
+                        &:focus {
+                            background: hsl(217, 12%, 63%);
+                            color: hsl(0, 0%, 100%);
+                        }
+                    }
+                }
+
+                .btn {
+                    width: 100%;
+                    background: hsl(25, 97%, 53%);
+                    border: none;
+                    border-radius: 20px;
+                    color: hsl(0, 0%, 100%);
+
+                    &:hover {
+                        background: hsl(0, 0%, 100%);
+                        color: hsl(25, 97%, 53%);
+                    }
+                }
+            }
+        }
+
+        .thank-you {
+            background: hsl(213, 19%, 18%);
+            width: 450px;
+            height: 375px;
+            border-radius: 10%;
+            margin: -475px auto;
+
+            .wrapper {
+                margin: 40px;
+
+                .final-rating {
+                    background:hsl(213, 19%, 25%, 1);
+                    color: hsl(25, 97%, 53%);
+                    width: 55%;
+                    height: 25px;
+                    border-radius: 20px;
+                }
+
+                .title {
+                    color: hsl(0, 0%, 100%);
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+
+                .description {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    }
+}

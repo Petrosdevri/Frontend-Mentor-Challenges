@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,700");
+html body {
+  background: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+html body .container .rating-component {
+  background: hsl(213, 19%, 18%);
+  width: 420px;
+  height: 375px;
+  border-radius: 10%;
+  margin: 100px auto;
+}
+html body .container .rating-component .wrapper {
+  margin: 40px;
+}
+html body .container .rating-component .wrapper #star {
+  width: 40px;
+  height: 40px;
+  background: hsl(213, 19%, 25%);
+  border-radius: 50%;
+}
+html body .container .rating-component .wrapper .title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+html body .container .rating-component .wrapper .description {
+  font-size: 15px;
+}
+html body .container .rating-component .wrapper .rating {
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+}
+html body .container .rating-component .wrapper .rating .rating-circle {
+  width: 50px;
+  height: 50px;
+  background: hsl(213, 19%, 25%);
+  border-radius: 50%;
+}
+html body .container .rating-component .wrapper .rating .rating-circle:hover {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+html body .container .rating-component .wrapper .rating .rating-circle:focus {
+  background: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+html body .container .rating-component .wrapper .btn {
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+}
+html body .container .rating-component .wrapper .btn:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+html body .container .thank-you {
+  background: hsl(213, 19%, 18%);
+  width: 450px;
+  height: 375px;
+  border-radius: 10%;
+  margin: -475px auto;
+}
+html body .container .thank-you .wrapper {
+  margin: 40px;
+}
+html body .container .thank-you .wrapper .final-rating {
+  background: hsl(213, 19%, 25%);
+  color: hsl(25, 97%, 53%);
+  width: 55%;
+  height: 25px;
+  border-radius: 20px;
+}
+html body .container .thank-you .wrapper .title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+html body .container .thank-you .wrapper .description {
+  font-size: 15px;
+}
+html body .container .hidden {
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */
