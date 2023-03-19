@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700,900");
+html body {
+  background: url("images/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+html body .container .order-summary {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 5em;
+  text-align: center;
+}
+html body .container .order-summary img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+html body .container .order-summary .card-body {
+  margin: 1em 0 1em 0;
+}
+html body .container .order-summary .card-body .card-title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+html body .container .order-summary .card-body .card-text {
+  color: hsl(224, 23%, 55%);
+}
+html body .container .order-summary .card-body .plan .plan-wrapper img {
+  -webkit-margin-after: 10%;
+          margin-block-end: 10%;
+}
+html body .container .order-summary .card-body .plan .plan-wrapper .plan-details .plan-title {
+  font-size: 1em;
+  font-weight: 900;
+}
+html body .container .order-summary .card-body .plan .plan-wrapper .plan-details .plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 1em;
+}
+html body .container .order-summary .card-body .plan a {
+  color: hsl(245, 75%, 52%);
+}
+html body .container .order-summary .card-body .buttons {
+  width: 90%;
+}
+html body .container .order-summary .card-body .buttons .payment-btn {
+  width: 100%;
+  height: 3em;
+  background: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+html body .container .order-summary .card-body .buttons .payment-btn:hover {
+  background: #fff;
+  color: hsl(245, 75%, 52%);
+}
+html body .container .order-summary .card-body .buttons .cancel-btn {
+  width: 100%;
+  height: 3em;
+}
+html body .container .order-summary .card-body .buttons .cancel-btn:hover {
+  color: hsl(245, 75%, 52%);
+}/*# sourceMappingURL=style.css.map */
