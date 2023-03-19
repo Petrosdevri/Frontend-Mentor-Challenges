@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Petrosdevri/Frontend-Mentor-Challenges#readme",
   "dependencies": {
-    "sass": "^1.59.2"
+    "sass": "^1.59.3"
   }
 }

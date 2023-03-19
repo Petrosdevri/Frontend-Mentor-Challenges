@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit:300,400,600");
+
+html body {
+    background: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+
+    .container {
+        .nft-card {
+            width: 370px;
+            height: 82vh;
+            background: hsl(216, 50%, 16%);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 20px hsla(0, 0%, 0%, 1);
+            margin-block-start: 5em;
+
+            .nft-image {
+                align-self: center;
+                background: url('./images/image-equilibrium.jpg');
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                width: 325px;
+                height: 315px;
+                position: relative;
+
+                &:hover::before {
+                    background-color: hsl(178, 100%, 50%);
+                    border-radius: 10px;
+                    content: '';
+                    cursor: pointer;
+                    opacity: 0.5;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                }
+
+                .view-icon {
+                    margin: 0 auto;
+                    position: relative;
+                    visibility: hidden;
+                    z-index: 2;
+
+                    &:hover {
+                        cursor: pointer;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            .nft-title {
+                color: hsl(0, 0%, 100%);
+                font-size: 1.5em;
+                font-weight: 600;
+                margin-inline-start: 1em;
+                text-align: left;
+
+                &:hover {
+                    color: hsl(178, 100%, 50%);
+                    cursor: pointer;
+                }
+            }
+
+            .nft-description {
+                font-size: 18px;
+                font-weight: 400;
+                margin-inline-start: 1.1em;
+            }
+
+            .auction, .creator {
+                height: 15px;
+            }
+
+            .auction {
+                .auction-price {
+                    margin-inline-end: 5em;
+                }
+            }
+
+            hr {
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .creator {
+                .creator-image {
+                    border: 2px solid hsl(0, 0%, 100%);
+                    border-radius: 50%;
+                }
+
+                .creator-name {
+                    margin-block-start: 1em;
+                    margin-inline-end: 4em;
+
+                    .name {
+                        color:hsl(0, 0%, 100%);
+                        &:hover {
+                            color: hsl(178, 100%, 50%);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

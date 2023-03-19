@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit:300,400,600");
+html body {
+  background: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+html body .container .nft-card {
+  width: 370px;
+  height: 82vh;
+  background: hsl(216, 50%, 16%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px hsl(0, 0%, 0%);
+  -webkit-margin-before: 5em;
+          margin-block-start: 5em;
+}
+html body .container .nft-card .nft-image {
+  align-self: center;
+  background: url("./images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 325px;
+  height: 315px;
+  position: relative;
+}
+html body .container .nft-card .nft-image:hover::before {
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  content: "";
+  cursor: pointer;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+html body .container .nft-card .nft-image .view-icon {
+  margin: 0 auto;
+  position: relative;
+  visibility: hidden;
+  z-index: 2;
+}
+html body .container .nft-card .nft-image .view-icon:hover {
+  cursor: pointer;
+  visibility: visible;
+}
+html body .container .nft-card .nft-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5em;
+  font-weight: 600;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+  text-align: left;
+}
+html body .container .nft-card .nft-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+html body .container .nft-card .nft-description {
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-margin-start: 1.1em;
+          margin-inline-start: 1.1em;
+}
+html body .container .nft-card .auction, html body .container .nft-card .creator {
+  height: 15px;
+}
+html body .container .nft-card .auction .auction-price {
+  -webkit-margin-end: 5em;
+          margin-inline-end: 5em;
+}
+html body .container .nft-card hr {
+  width: 85%;
+  margin: 0 auto;
+}
+html body .container .nft-card .creator .creator-image {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+html body .container .nft-card .creator .creator-name {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-end: 4em;
+          margin-inline-end: 4em;
+}
+html body .container .nft-card .creator .creator-name .name {
+  color: hsl(0, 0%, 100%);
+}
+html body .container .nft-card .creator .creator-name .name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
