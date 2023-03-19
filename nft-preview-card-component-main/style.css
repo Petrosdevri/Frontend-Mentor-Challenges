@@ -12,8 +12,7 @@ html body .container .nft-card {
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 20px hsl(0, 0%, 0%);
-  -webkit-margin-before: 5em;
-          margin-block-start: 5em;
+  margin: 5em;
 }
 html body .container .nft-card .nft-image {
   align-self: center;
