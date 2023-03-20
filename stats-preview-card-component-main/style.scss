@@ -23,6 +23,11 @@ html body {
             .stats-details {
                 flex-basis: 50%;
                 margin-inline-start: 4em;
+                @media screen and (max-width: 480px) {
+                    justify-content: center;
+                    align-items: center;
+                    margin-inline-start: 2em;
+                }
 
                 .title {
                     font-size: 2.5em;
@@ -93,6 +98,9 @@ html body {
                         width: 100%;
                         height: 100%;
                         z-index: 1;
+                        @media screen and (max-width: 480px) {
+                            content: url(./images/image-header-mobile.jpg);
+                        }
                     }
                 }
             }
