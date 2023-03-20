@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca:400");
+html body {
+  background: hsl(233, 47%, 7%);
+}
+html body .container .stats-card {
+  width: 90%;
+  height: 440px;
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  -webkit-margin-before: 5em;
+          margin-block-start: 5em;
+}
+@media screen and (max-width: 480px) {
+  html body .container .stats-card {
+    height: 950px;
+    -webkit-margin-before: 4em;
+            margin-block-start: 4em;
+    flex-direction: column-reverse;
+  }
+}
+html body .container .stats-card .stats-details {
+  flex-basis: 50%;
+  -webkit-margin-start: 4em;
+          margin-inline-start: 4em;
+}
+html body .container .stats-card .stats-details .title {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  html body .container .stats-card .stats-details .title {
+    font-size: 2em;
+  }
+}
+html body .container .stats-card .stats-details .title .keyword {
+  color: hsl(277, 64%, 61%);
+}
+html body .container .stats-card .stats-details .description {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media screen and (max-width: 480px) {
+  html body .container .stats-card .stats-details .stats {
+    flex-direction: column;
+    -webkit-margin-before: 2em;
+            margin-block-start: 2em;
+  }
+}
+html body .container .stats-card .stats-details .stats .stat .stat-title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+html body .container .stats-card .stats-details .stats .stat .stat-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 1px;
+}
+html body .container .stats-card .stats-image {
+  flex-basis: 50%;
+  position: relative;
+  height: 100%;
+}
+html body .container .stats-card .stats-image .image-overlay {
+  background-color: hsl(277, 64%, 61%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+html body .container .stats-card .stats-image .image-overlay::before {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.4;
+  z-index: 2;
+}
+html body .container .stats-card .stats-image .image-overlay img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
