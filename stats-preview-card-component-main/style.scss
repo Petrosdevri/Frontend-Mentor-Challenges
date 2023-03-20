@@ -14,16 +14,16 @@ html body {
             font-family: 'Inter', sans-serif;
             font-size: 15px;
             margin-block-start: 5em;
-            @media screen and (max-width: 480px) {
-                height: 950px;
-                margin-block-start: 4em;
+            @media screen and (max-width: 780px) {
+                height: 1350px;
                 flex-direction: column-reverse;
+                margin-block-start: 4em;
             }
 
             .stats-details {
                 flex-basis: 50%;
                 margin-inline-start: 4em;
-                @media screen and (max-width: 480px) {
+                @media screen and (max-width: 780px) {
                     justify-content: center;
                     align-items: center;
                     margin-inline-start: 2em;
@@ -32,7 +32,7 @@ html body {
                 .title {
                     font-size: 2.5em;
                     font-weight: 700;
-                    @media screen and (max-width: 480px) {
+                    @media screen and (max-width: 780px) {
                         font-size: 2em;
                     }
 
@@ -46,7 +46,7 @@ html body {
                 }
 
                 .stats {
-                    @media screen and (max-width: 480px) {
+                    @media screen and (max-width: 780px) {
                         flex-direction: column;
                         margin-block-start: 2em;
                     }
@@ -98,8 +98,10 @@ html body {
                         width: 100%;
                         height: 100%;
                         z-index: 1;
-                        @media screen and (max-width: 480px) {
+                        object-fit: cover;
+                        @media screen and (max-width: 780px) {
                             content: url(./images/image-header-mobile.jpg);
+                            height: 100%;
                         }
                     }
                 }

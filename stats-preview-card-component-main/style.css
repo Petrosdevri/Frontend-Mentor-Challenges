@@ -14,12 +14,12 @@ html body .container .stats-card {
   -webkit-margin-before: 5em;
           margin-block-start: 5em;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   html body .container .stats-card {
-    height: 950px;
+    height: 1350px;
+    flex-direction: column-reverse;
     -webkit-margin-before: 4em;
             margin-block-start: 4em;
-    flex-direction: column-reverse;
   }
 }
 html body .container .stats-card .stats-details {
@@ -27,7 +27,7 @@ html body .container .stats-card .stats-details {
   -webkit-margin-start: 4em;
           margin-inline-start: 4em;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   html body .container .stats-card .stats-details {
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ html body .container .stats-card .stats-details .title {
   font-size: 2.5em;
   font-weight: 700;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   html body .container .stats-card .stats-details .title {
     font-size: 2em;
   }
@@ -50,7 +50,7 @@ html body .container .stats-card .stats-details .title .keyword {
 html body .container .stats-card .stats-details .description {
   color: hsla(0, 0%, 100%, 0.75);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   html body .container .stats-card .stats-details .stats {
     flex-direction: column;
     -webkit-margin-before: 2em;
@@ -97,9 +97,12 @@ html body .container .stats-card .stats-image .image-overlay img {
   width: 100%;
   height: 100%;
   z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   html body .container .stats-card .stats-image .image-overlay img {
     content: url(./images/image-header-mobile.jpg);
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
