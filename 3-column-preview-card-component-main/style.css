@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca:400");
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Display:700");
+html body .container .preview-card {
+  width: 825px;
+  height: 475px;
+  border-radius: 20px;
+  color: rgba(255,255,255,0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  margin-block-start: 4em;
+}
+@media (max-width: 768px) {
+  html body .container .preview-card {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+html body .container .preview-card >* {
+  flex-basis: 33%;
+  height: 100%;
+}
+html body .container .preview-card >* >* {
+  margin: 20px 40px 0 40px;
+}
+html body .container .preview-card >* >* .title {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  letter-spacing: none;
+}
+html body .container .preview-card >* .btn {
+  width: 140px;
+  height: 45px;
+  background: #f2f2f2;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  html body .container .preview-card >* {
+    justify-content: center;
+  }
+}
+html body .container .preview-card .sedans {
+  background: #e38826;
+}
+html body .container .preview-card .sedans .sedan-btn {
+  color: #e38826;
+}
+html body .container .preview-card .sedans .sedan-btn:hover {
+  color: #000;
+}
+html body .container .preview-card .suvs {
+  background: #006970;
+}
+html body .container .preview-card .suvs .suv-btn {
+  color: #006970;
+}
+html body .container .preview-card .suvs .suv-btn:hover {
+  color: #000;
+}
+html body .container .preview-card .luxury {
+  background: #004241;
+}
+html body .container .preview-card .luxury .luxury-btn {
+  color: #004241;
+}
+html body .container .preview-card .luxury .luxury-btn:hover {
+  color: #000;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca:400')
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:700')
+
+html body
+    .container
+        .preview-card
+            width: 825px
+            height: 475px
+            border-radius: 20px
+            color: hsla(0, 0%, 100%, 0.75)
+            font-family: 'Lexend Deca', sans-serif
+            font-size: 15px
+            margin-block-start: 4em
+
+            @media (max-width: 768px)
+                width: 90%
+                height: 100%
+                flex-direction: column
+
+            >*
+                flex-basis: 33%;
+                height: 100%
+
+                >*
+                    margin: 20px 40px 0 40px
+
+                    .title
+                        color: hsl(0, 0%, 95%)
+                        font-family: 'Big Shoulders Display', cursive
+                        font-weight: 700
+                        letter-spacing: none
+
+                .btn
+                    width: 140px
+                    height: 45px
+                    background: hsl(0, 0%, 95%)
+                    border-radius: 20px
+
+                @media (max-width: 768px)
+                    justify-content: center
+
+            .sedans
+                background: hsl(31, 77%, 52%)
+
+                .sedan-btn
+                    color: hsl(31, 77%, 52%)
+                    &:hover
+                        color: hsl(0, 0%, 0%)
+
+            .suvs
+                background: hsl(184, 100%, 22%)
+
+                .suv-btn
+                    color: hsl(184, 100%, 22%)
+                    &:hover
+                        color: hsl(0, 0%, 0%)
+
+            .luxury
+                background: hsl(179, 100%, 13%)
+
+                .luxury-btn
+                    color: hsl(179, 100%, 13%)
+                    &:hover
+                        color: hsl(0, 0%, 0%)
