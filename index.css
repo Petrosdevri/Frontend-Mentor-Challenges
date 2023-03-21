@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&display=swap");
 .container {
-  background-color: #fff;
+  background: #fff;
+  color: #000;
 }
 .container h1 {
   font-family: "Barlow", sans-serif;
@@ -10,7 +11,6 @@
   font-family: "Fraunces", serif;
 }
 .container p a {
-  color: #000;
   text-decoration: none;
 }
 .container p a:hover {
@@ -24,44 +24,49 @@
   font-size: 0.8rem;
 }
 .container .projects-table div > div .card-subtitle div .html-btn {
-  background-color: #E34F26;
+  background: #E34F26;
   color: #fff;
 }
 .container .projects-table div > div .card-subtitle div .html-btn:hover {
-  background-color: #c43c1f;
+  background: #c43c1f;
 }
 .container .projects-table div > div .card-subtitle div .css-btn {
-  background-color: #1572B6;
+  background: #1572B6;
   color: #fff;
 }
 .container .projects-table div > div .card-subtitle div .css-btn:hover {
-  background-color: #1f3bc4;
+  background: #1f3bc4;
 }
 .container .projects-table div > div .card-subtitle div .js-btn {
-  background-color: #F7DF1E;
-  color: #000;
+  background: #F7DF1E;
 }
 .container .projects-table div > div .card-subtitle div .js-btn:hover {
-  background-color: #E6C91A;
+  background: #E6C91A;
 }
 .container .projects-table div > div .card-subtitle div .bootstrap-btn {
-  background-color: #7952B3;
+  background: #7952B3;
   color: #fff;
 }
 .container .projects-table div > div .card-subtitle div .bootstrap-btn:hover {
-  background-color: #4A336E;
+  background: #4A336E;
 }
 .container .projects-table div > div .card-subtitle div .scss-btn {
-  background-color: #CC6699;
+  background: #CC6699;
   color: #fff;
 }
 .container .projects-table div > div .card-subtitle div .scss-btn:hover {
-  background-color: #B84D7F;
+  background: #B84D7F;
 }
 .container .projects-table div > div .card-subtitle div .react-btn {
-  background-color: #61DAFB;
-  color: #000;
+  background: #61DAFB;
 }
 .container .projects-table div > div .card-subtitle div .react-btn:hover {
-  background-color: #4fc8e9;
+  background: #4fc8e9;
+}
+.container .projects-table div > div .card-subtitle div .stylus-btn {
+  background: #333333;
+  color: #fff;
+}
+.container .projects-table div > div .card-subtitle div .stylus-btn:hover {
+  background: #1f1f1f;
 }/*# sourceMappingURL=index.css.map */
