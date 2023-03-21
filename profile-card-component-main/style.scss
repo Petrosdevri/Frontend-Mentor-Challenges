@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Kumbh+Sans:400,700");
+
+html body {
+    background: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-top.svg"),
+        url("images/bg-pattern-bottom.svg");
+    background-position: bottom 100px right 650px, top 350px left 650px;
+    background-repeat: no-repeat, no-repeat;
+    color: hsl(0, 0%, 59%);
+
+    .container {
+        .profile-card {
+            background: hsl(100, 100%, 100%);
+            border-radius: 20px;
+            box-shadow: 0 0 10px hsl(0, 0%, 0%);
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-block-start: 5em;
+            width: 450px;
+            height: 500px;
+
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+
+            .profile-background-picture {
+                flex-basis: 40%;
+                .card-background {
+                    border-radius: 20px 20px 0 0;
+                    height: 60%;
+                    width: 100%;
+                }
+
+                .profile-pic {
+                    border: 4px solid hsl(100, 100%, 100%);
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .profile-basics {
+                flex-basis: 30%;
+                .profile-headers {
+                    .name {
+                        color: hsl(229, 23%, 23%);
+                        font-weight: 700;
+                    }
+                    .age {
+                        color: hsl(227, 10%, 46%);
+                    }
+                }
+            }
+
+            .profile-data {
+                >* > h4 {
+                    color: hsl(229, 23%, 23%);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
