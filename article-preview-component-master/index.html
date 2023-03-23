@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:500,700">
+  <title>Frontend Mentor | Article preview component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container d-flex justify-content-center align-items-center">
+    <div class="article-preview d-flex justify-content-center align-items-center gap-2">
+      <div class="article-img">
+        <img src="./images/drawers.jpg" class="img">
+      </div>
+      <div class="article d-flex flex-column justify-content-evenly gap-2">
+        <h1 class="title">Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</h1>
+        <p class="description">Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.</p>
+        <div class="author-share d-flex justify-content-between gap-1">
+          <div class="author d-flex justify-content-center gap-3">
+            <img src="./images/avatar-michelle.jpg" class="author-pic" width="50" height="50">
+            <div class="author-info d-flex flex-column justify-content-center">
+              <p class="info"><span class="name">Michelle Appleton</span><br> 28 Jun 2020</p>
+            </div>
+          </div>
+          <button class="btn share-btn d-flex justify-content-center align-items-center">
+            <img src="./images/icon-share.svg" width="15" height="15">
+            <div class="toolbar visually-hidden d-flex justify-content-center align-items-center position-absolute">
+              <p class="share" style="color: rgb(255, 255, 255); font-weight: 300; margin-inline-start: 25px;">S H A R E</p>
+              <ul class="toolbar-list d-flex justify-content-center align-items-center gap-3">
+                <li class="list-icon" style="list-style: none;"><a class="icon-link" href="#"><img class="icon-image" src="./images/icon-facebook.svg"></a></li>
+                <li class="list-icon" style="list-style: none;"><a class="icon-link" href="#"><img class="icon-image" src="./images/icon-twitter.svg"></a></li>
+                <li class="list-icon" style="list-style: none;"><a class="icon-link" href="#"><img class="icon-image" src="./images/icon-pinterest.svg"></a></li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Petrosdevri">Petros Devrikis</a>.
+  </div>-->
+</body>
+</html>

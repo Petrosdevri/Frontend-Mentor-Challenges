@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope:500,700')
+
+html body
+    background: hsl(210, 46%, 95%)
+    color: hsl(214, 17%, 51%)
+    font-family: 'Manrope', sans-serif
+    font-size: 13px
+    font-weight: 500
+
+    .article-preview
+        width: 775px
+        height: 300px
+        background: hsl(100, 100%, 100%)
+        border-radius: 20px
+        box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1)
+        margin: 15em 0 10em 0
+
+        @media (max-width: 768px)
+            flex-direction: column
+            width: 525px
+            height: 100%
+
+        @media (max-width: 478px)
+            width: 350px
+
+        .article-img
+            .img
+                border-radius: 20px 0 0 20px;
+                width: 300px;
+                height: 300px;
+
+                @media (max-width: 768px)
+                    border-radius: 20px 20px 0 0
+                    width: 525px
+
+                @media (max-width: 478px)
+                    width: 350px
+
+
+        .article
+            margin: 0 2em
+
+            .title
+                color: hsl(217, 19%, 35%)
+                font-size: 1.5em
+                font-weight: 700
+
+            .author-share
+                .author
+                    .author-pic
+                        border-radius: 50%
+
+                    .author-info
+                        .info
+                            color: hsl(212, 23%, 69%)
+                            font-weight: 500
+                            line-height: 1.75em
+
+                            .name
+                                color: hsl(217, 19%, 35%)
+                                font-weight: 700
+
+                    @media (max-width: 768px)
+                        visibility: hidden
+
+                .share-btn
+                    background: hsl(210, 46%, 95%)
+                    border-radius: 50%
+                    margin: 0.5em 0.5em 0 0
+                    width: 35px
+                    height: 35px
+
+                    .toolbar
+                        background: rgb(72, 85, 106)
+                        border-radius: 5px
+                        padding: 0.5rem
+                        transform: translateX(-35%) translateY(-105%)
+
+                        @media (max-width: 768px)
+                            border-radius: 0 0 20px 20px
+                            width: 525px
+                            transform: translateX(-40%) translateY(14%)
+
+                        @media (max-width: 478px)
+                            width: 350px
+                            transform: translateX(-35%) translateY(15%)
