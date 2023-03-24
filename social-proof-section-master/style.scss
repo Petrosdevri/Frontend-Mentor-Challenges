@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=League+Spartan:400,500,700");
+
+html body {
+    .container {
+        font-family: "League Spartan", sans-serif;
+        font-size: 15px;
+
+        .social-section {
+            margin: 14em 4em;
+
+            @media (max-width: 768px) {
+                align-items: center;
+                width: 80%;
+                margin: 2em 10em 2em 10em;
+                text-align: center;
+            }
+
+            .description-ratings {
+                .description {
+                    margin: 0 17em 0 1em;
+
+                    .title {
+                        color: hsl(300, 43%, 22%);
+                        font-weight: 700;
+                    }
+
+                    .text {
+                        color: hsl(303, 10%, 53%);
+                        font-weight: 500;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    margin-inline-start: 15em;
+                }
+
+                .ratings {
+                    .star-rating {
+                        width: 375px;
+                        height: 50px;
+                        background: hsl(300, 24%, 96%);
+
+                        .rating {
+                            color: hsl(300, 43%, 22%);
+                            font-weight: 700;
+                            margin-block-start: 1.15em;
+                        }
+                    }
+
+                    #star-rating1 {
+                        margin-inline-end: 10em;
+                    }
+
+                    #star-rating2 {
+                        margin-inline-end: 5em;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    #star-rating3 {
+                        margin-inline-end: 15em;
+                    }
+                }
+            }
+
+            .testimonials {
+                .testimonial {
+                    width: 350px;
+                    height: 225px;
+                    background: hsl(300, 43%, 22%);
+                    border-radius: 10px;
+                    color: hsl(0, 0%, 100%);
+
+                    .testimonial-header {
+                        margin: 2em 2em 0 2em;
+
+                        .avatar {
+                            border-radius: 50%;
+                        }
+
+                        .testimonial-header-text {
+                            .name {
+                                font-weight: 700;
+                                .buyer {
+                                    color: hsl(333, 80%, 67%);
+                                }
+                            }
+                        }
+                    }
+
+                    .testimonial-body {
+                        margin: 1em 4em 2em 2em;
+                    }
+                }
+
+                #testimonial2 {
+                    margin-block-start: 1em;
+                }
+
+                #testimonial3 {
+                    margin-block-start: 2em;
+                }
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

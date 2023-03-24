@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=League+Spartan:400,500,700");
+html body .container {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+html body .container .social-section {
+  margin: 14em 4em;
+}
+@media (max-width: 768px) {
+  html body .container .social-section {
+    align-items: center;
+    width: 80%;
+    margin: 2em 10em 2em 10em;
+    text-align: center;
+  }
+}
+html body .container .social-section .description-ratings .description {
+  margin: 0 17em 0 1em;
+}
+html body .container .social-section .description-ratings .description .title {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+html body .container .social-section .description-ratings .description .text {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  html body .container .social-section .description-ratings {
+    -webkit-margin-start: 15em;
+            margin-inline-start: 15em;
+  }
+}
+html body .container .social-section .description-ratings .ratings .star-rating {
+  width: 375px;
+  height: 50px;
+  background: hsl(300, 24%, 96%);
+}
+html body .container .social-section .description-ratings .ratings .star-rating .rating {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  -webkit-margin-before: 1.15em;
+          margin-block-start: 1.15em;
+}
+html body .container .social-section .description-ratings .ratings #star-rating1 {
+  -webkit-margin-end: 10em;
+          margin-inline-end: 10em;
+}
+html body .container .social-section .description-ratings .ratings #star-rating2 {
+  -webkit-margin-end: 5em;
+          margin-inline-end: 5em;
+}
+@media (max-width: 768px) {
+  html body .container .social-section .description-ratings {
+    flex-direction: column;
+  }
+  html body .container .social-section .description-ratings #star-rating3 {
+    -webkit-margin-end: 15em;
+            margin-inline-end: 15em;
+  }
+}
+html body .container .social-section .testimonials .testimonial {
+  width: 350px;
+  height: 225px;
+  background: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+}
+html body .container .social-section .testimonials .testimonial .testimonial-header {
+  margin: 2em 2em 0 2em;
+}
+html body .container .social-section .testimonials .testimonial .testimonial-header .avatar {
+  border-radius: 50%;
+}
+html body .container .social-section .testimonials .testimonial .testimonial-header .testimonial-header-text .name {
+  font-weight: 700;
+}
+html body .container .social-section .testimonials .testimonial .testimonial-header .testimonial-header-text .name .buyer {
+  color: hsl(333, 80%, 67%);
+}
+html body .container .social-section .testimonials .testimonial .testimonial-body {
+  margin: 1em 4em 2em 2em;
+}
+html body .container .social-section .testimonials #testimonial2 {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+}
+html body .container .social-section .testimonials #testimonial3 {
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+}
+@media (max-width: 768px) {
+  html body .container .social-section .testimonials {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
