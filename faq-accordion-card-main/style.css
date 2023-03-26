@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Kumbh+Sans:400,700");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
+html body {
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+  background-position: center;
+  background-size: cover;
+  color: #787887;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+html body .container .faq-card {
+  width: 85%;
+  height: 600px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  margin-block-start: 18em;
+  margin-block-end: 32em;
+}
+@media (max-width: 900px) {
+  html body .container .faq-card {
+    flex-direction: column;
+    justify-content: start;
+    width: 330px;
+    height: 1200px;
+  }
+}
+html body .container .faq-card .card-image .illustration {
+  transform: translate(-29.5%, 20%);
+}
+html body .container .faq-card .card-image .illustration .img-box {
+  position: absolute;
+  transform: translate(2%, 90%);
+  z-index: 2;
+}
+html body .container .faq-card .card-image .illustration .illustration-woman {
+  position: relative;
+  transform: skewY(-6.5deg);
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  html body .container .faq-card .card-image {
+    transform: translate(25%, -65%);
+  }
+  html body .container .faq-card .card-image .img-box {
+    width: 25px;
+    height: 25px;
+  }
+  html body .container .faq-card .card-image .illustration-woman {
+    width: 250px;
+    position: relative;
+    transform: skewX(-6.5deg);
+  }
+}
+html body .container .faq-card .faq {
+  margin: 3em;
+}
+html body .container .faq-card .faq .title {
+  color: #1d1e35;
+  font-weight: 700;
+  margin-inline-start: 0.8em;
+}
+html body .container .faq-card .faq .accordion {
+  list-style: none;
+  width: 500px;
+}
+@media (max-width: 900px) {
+  html body .container .faq-card .faq .accordion {
+    width: 90%;
+  }
+}
+html body .container .faq-card .faq .accordion .acc-item {
+  margin-bottom: 1rem;
+}
+html body .container .faq-card .faq .accordion .acc-item .acc-header {
+  border-bottom: 2px solid #e7e7e9;
+  color: #787887;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+html body .container .faq-card .faq .accordion .acc-item .acc-header .arrow {
+  float: right;
+}
+html body .container .faq-card .faq .accordion .acc-item .acc-header:hover {
+  cursor: pointer;
+}
+html body .container .faq-card .faq .accordion .acc-item .acc-content {
+  display: none;
+  font-size: 1em;
+}
