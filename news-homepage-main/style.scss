@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700,800');
+
+html body {
+    background: hsl(36, 100%, 99%);
+    color: hsl(233, 8%, 79%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+
+    .container {
+        margin-block-end: 2em;
+
+        .main-articles {
+            .header .header-article {
+                .header-image {
+                    @media (max-width: 768px) {
+                        content: url('./assets/images/image-web-3-mobile.jpg');
+                    }
+                }
+
+                .header-text {
+                    color: hsl(240, 100%, 5%);
+
+                    .main-title {
+                        font-weight: 800;
+                    }
+
+                    .main-subtitle .main-btn {
+                        background: hsl(5, 85%, 63%);
+                        color: hsl(36, 100%, 99%);
+                        width: 175px;
+                        height: 50px;
+                        &:hover, &:focus {
+                            background: hsl(35, 77%, 62%);
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .new-nav {
+                background: hsl(240, 100%, 5%);
+
+                .new-title {
+                    color: hsl(35, 77%, 62%);
+                    font-weight: 800;
+                }
+
+                .new-item .new-item-title {
+                    color: hsl(36, 100%, 99%);
+                    font-weight: 700;
+                    &:hover, &:focus {
+                        color:hsl(5, 85%, 63%);
+                        cursor: pointer;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    margin: 1em 0 0 2em;
+                    width: 350px;
+                }
+            }
+        }
+
+        .top-opinions {
+            .top-opinion {
+                width: 300px;
+                height: 100px;
+
+                .top-opinion-text {
+                    color: hsl(240, 100%, 5%);
+
+                    .top-opinion-number {
+                        color:hsl(233, 8%, 79%);
+                        font-weight: 800;
+                    }
+
+                    .top-opinion-title {
+                        font-weight: 700;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    margin-block-start: 1em;
+                    width: 350px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                margin-inline-start: 2em;
+            }
+        }
+    }
+}
