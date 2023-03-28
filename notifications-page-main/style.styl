@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500,800')
+
+html body
+    background: hsl(210, 60%, 98%)
+    color: hsl(219, 14%, 63%)
+    font-family: 'Plus Jakarta Sans', sans-serif
+    font-size: 16px
+    font-weight: 500
+
+    .container
+        .notifications-page
+            background: hsl(0, 0%, 100%)
+            border-radius: 20px
+            box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1)
+            margin: 5em
+
+            >*
+                padding: 2em
+
+            .notifications-btn
+                .notifications-section
+                    .notifications
+                        color: hsl(224, 21%, 14%)
+                        font-weight: 700
+
+                    .notifications-number
+                        background: hsl(219, 85%, 26%)
+                        border-radius: 25%
+                        color: hsl(0, 0%, 100%)
+                        font-size: 1.2em
+                        font-weight: 700
+                        width: 45px
+                        height: 35px
+
+                .read-btn
+                    color: hsl(219, 12%, 42%)
+                    &:hover
+                        color: hsl(224, 21%, 14%)
+
+            .messages
+                .message
+                    width: 100%
+                    height: 80px
+                    padding: 1em
+
+                    .avatar
+                        border-radius: 50%
+
+                    .message-content
+                        color: hsl(219, 12%, 42%)
+
+                        .name
+                            color: hsl(224, 21%, 14%)
+                            font-weight: 700
+
+                        .post-name
+                            font-weight: 700
+
+                        .group-name
+                            color: hsl(219, 85%, 26%)
+                            font-weight: 700
+
+                        .unread-mark
+                            background: hsl(1, 90%, 64%)
+                            border-radius: 50%
+                            width: 10px
+                            height: 10px
+
+                        .time
+                            color: hsl(219, 14%, 63%)
+
+
+                    .picture
+                        border-radius: 25%
+                        margin-inline-start: 35%
+                        @media (max-width: 700px)
+                            margin-inline-start: 0
+
+                .unread
+                    background: hsl(210, 60%, 98%)
+
+                :nth-child(4)
+                    height: 175px
+
+                    .message-private
+                        border: 1px solid hsl(211, 68%, 94%)
+                        padding: 1em
+                        @media (max-width: 700px)
+                            padding: 0.40em
+
+            @media (max-width: 700px)
+                width: 110%
+                margin: 0 1em 0 -1em
+                padding: 0 1em 0 0
+
+                >*
+                    font-size: 100% * 0.8
+                    width: 110%

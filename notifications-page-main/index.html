@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500,800">
+  <title>Frontend Mentor | Notifications page</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container d-flex gap-2">
+    <div class="notifications-page d-flex flex-column justify-content-center gap-1">
+      <div class="notifications-btn d-flex justify-content-between gap-5">
+        <div class="notifications-section d-inline-flex justify-content-center align-items-center gap-3">
+          <h1 class="notifications">Notifications</h1>
+          <div class="notifications-number d-inline-flex justify-content-center align-items-center">3</div>
+        </div>
+        <button class="btn read-btn">Mark all as read</button>
+      </div>
+      <div class="messages d-flex flex-column justify-content-center gap-2 flex-wrap">
+        <div class="message d-flex justify-content-start align-items-start gap-4 unread">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Mark Webber</span> reacted to your recent post <span class="post-name">My first tournament today!</span>  <span class="unread-mark d-inline-block"></span> <br>
+            <span class="time">1m ago</span></p>
+          </div>
+        </div>
+        <div class="message d-flex justify-content-start align-items-start gap-4 unread">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Angela Gray</span> followed you   <span class="unread-mark d-inline-block"></span> <br>
+            <span class="time">5m ago</span></p>
+          </div>
+        </div>
+        <div class="message d-flex justify-content-start align-items-start gap-4 unread">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Jacob Thompson</span> has joined your group <span class="group-name">Chess Club</span>  <span class="unread-mark d-inline-block"></span> <br>
+            <span class="time">1 day ago</span></p>
+          </div>
+        </div>
+        <div class="message d-flex justify-content-start align-items-start gap-4">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Rizky Hasanuddin</span> sent you a private message <br>
+            <span class="time">5 days ago</span></p>
+            <div class="message-private">
+              <p class="message-text">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.</p>
+            </div>
+          </div>
+        </div>
+        <div class="message d-flex justify-content-start align-items-start gap-4">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Kimberly Smith</span> commented on your picture <br>
+            <span class="time">1 week ago</span></p>
+          </div>
+          <img src="./assets/images/image-chess.webp" alt="Chess Picture" class="picture" width="50" height="50">
+        </div>
+        <div class="message d-flex justify-content-start align-items-start gap-4">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Nathan Peterson</span> reacted to your recent post <span class="post-name">5 end-game strategies to increase your win rate</span> <br>
+            <span class="time">2 weeks ago</span></p>
+          </div>
+        </div>
+        <div class="message d-flex justify-content-start align-items-start gap-4">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" class="avatar" width="50" height="50">
+          <div class="message-content">
+            <p><span class="name">Anna Kim</span> left the group <span class="group-name">Chess Club</span> <br>
+            <span class="time">2 weeks ago</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Petrosdevri">Petros Devrikis</a>.
+  </div>-->
+</body>
+</html>

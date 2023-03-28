@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500,800");
+html body {
+  background: #f7fafd;
+  color: #939dae;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+html body .container .notifications-page {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  margin: 5em;
+}
+html body .container .notifications-page >* {
+  padding: 2em;
+}
+html body .container .notifications-page .notifications-btn .notifications-section .notifications {
+  color: #1c202b;
+  font-weight: 700;
+}
+html body .container .notifications-page .notifications-btn .notifications-section .notifications-number {
+  background: #0a317b;
+  border-radius: 25%;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 45px;
+  height: 35px;
+}
+html body .container .notifications-page .notifications-btn .read-btn {
+  color: #5e6778;
+}
+html body .container .notifications-page .notifications-btn .read-btn:hover {
+  color: #1c202b;
+}
+html body .container .notifications-page .messages .message {
+  width: 100%;
+  height: 80px;
+  padding: 1em;
+}
+html body .container .notifications-page .messages .message .avatar {
+  border-radius: 50%;
+}
+html body .container .notifications-page .messages .message .message-content {
+  color: #5e6778;
+}
+html body .container .notifications-page .messages .message .message-content .name {
+  color: #1c202b;
+  font-weight: 700;
+}
+html body .container .notifications-page .messages .message .message-content .post-name {
+  font-weight: 700;
+}
+html body .container .notifications-page .messages .message .message-content .group-name {
+  color: #0a317b;
+  font-weight: 700;
+}
+html body .container .notifications-page .messages .message .message-content .unread-mark {
+  background: #f65351;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+html body .container .notifications-page .messages .message .message-content .time {
+  color: #939dae;
+}
+html body .container .notifications-page .messages .message .picture {
+  border-radius: 25%;
+  margin-inline-start: 35%;
+}
+@media (max-width: 700px) {
+  html body .container .notifications-page .messages .message .picture {
+    margin-inline-start: 0;
+  }
+}
+html body .container .notifications-page .messages .unread {
+  background: #f7fafd;
+}
+html body .container .notifications-page .messages :nth-child(4) {
+  height: 175px;
+}
+html body .container .notifications-page .messages :nth-child(4) .message-private {
+  border: 1px solid #e5effa;
+  padding: 1em;
+}
+@media (max-width: 700px) {
+  html body .container .notifications-page .messages :nth-child(4) .message-private {
+    padding: 0.4em;
+  }
+}
+@media (max-width: 700px) {
+  html body .container .notifications-page {
+    width: 110%;
+    margin: 0 1em 0 -1em;
+    padding: 0 1em 0 0;
+  }
+  html body .container .notifications-page >* {
+    font-size: 80%;
+    width: 110%;
+  }
+}
