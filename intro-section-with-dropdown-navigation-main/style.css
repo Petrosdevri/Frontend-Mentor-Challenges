@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:500,700");
+html body {
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%) !important;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+html body .intro-section .navbar {
+  margin: 0.5em 4em;
+}
+html body .intro-section .navbar .container-fluid .collapse .navbar-nav > * {
+  margin: 0 0.9em;
+}
+html body .intro-section .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  color: hsl(0, 0%, 41%) !important;
+}
+html body .intro-section .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: hsl(0, 0%, 8%) !important;
+}
+html body .intro-section .navbar .container-fluid .collapse .btns .btn {
+  border-radius: 15px !important;
+  color: hsl(0, 0%, 41%) !important;
+  height: 45px;
+}
+html body .intro-section .navbar .container-fluid .collapse .btns .btn:nth-child(2):hover {
+  background: hsl(0, 0%, 8%) !important;
+  color: hsl(0, 0%, 98%) !important;
+}
+html body .intro-section .intro > * {
+  margin: 4.6em;
+}
+html body .intro-section .intro .intro-text .text .title {
+  color: hsl(0, 0%, 8%);
+  font-size: 4.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+html body .intro-section .intro .intro-text .text .learn-btn {
+  width: 165px;
+  height: 55px;
+  border-radius: 15px;
+}
+html body .intro-section .intro .intro-text .text .learn-btn:hover {
+  background: hsl(0, 0%, 98%) !important;
+  color: hsl(0, 0%, 8%) !important;
+}
+@media (max-width: 700px) {
+  html body .intro-section .intro {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+  }
+  html body .intro-section .intro .intro-text .learn-btn {
+    -webkit-margin-start: 30%;
+            margin-inline-start: 30%;
+  }
+  html body .intro-section .intro .img-hero {
+    content: url("images/image-hero-mobile.png");
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

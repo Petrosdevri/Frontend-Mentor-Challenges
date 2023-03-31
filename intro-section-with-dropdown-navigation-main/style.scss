@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Epilogue:500,700');
+
+$black: hsl(0, 0%, 8%);
+$grey: hsl(0, 0%, 41%);
+$white: hsl(0, 0%, 98%);
+
+html body {
+    background: $white;
+    color: $grey !important;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    .intro-section {
+        .navbar {
+            margin: 0.5em 4em;
+            .container-fluid .collapse .navbar-nav {
+                >* {
+                    margin: 0 0.9em;
+                }
+                .nav-item .nav-link {
+                    color: $grey !important;
+                    &:hover {
+                        color: $black !important;
+                    }
+                }
+            }
+            .container-fluid .collapse .btns {
+                .btn {
+                    border-radius: 15px !important;
+                    color: $grey !important;
+                    height: 45px;
+                }
+                .btn:nth-child(2) {
+                    &:hover {
+                        background: $black !important;
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+
+        .intro {
+            >* {
+                margin: 4.6em;
+            }
+
+            .intro-text {
+                .text {
+                    .title {
+                        color: $black;
+                        font-size: 4.5em;
+                        font-weight: 700;
+                        margin-bottom: 0.5em;
+                    }
+
+                    .learn-btn {
+                        width: 165px;
+                        height: 55px;
+                        border-radius: 15px;
+                        &:hover {
+                            background: $white !important;
+                            color: $black !important;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 700px) {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+                gap: 1em;
+
+                .intro-text .learn-btn {
+                    margin-inline-start: 30%;
+                }
+
+                .img-hero {
+                    content: url('images/image-hero-mobile.png');
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
