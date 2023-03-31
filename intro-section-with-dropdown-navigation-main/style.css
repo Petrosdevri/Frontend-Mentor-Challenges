@@ -19,9 +19,10 @@ html body .intro-section .navbar .container-fluid .collapse .navbar-nav .nav-ite
   color: hsl(0, 0%, 8%) !important;
 }
 html body .intro-section .navbar .container-fluid .collapse .btns .btn {
+  width: 110px;
+  height: 45px;
   border-radius: 15px !important;
   color: hsl(0, 0%, 41%) !important;
-  height: 45px;
 }
 html body .intro-section .navbar .container-fluid .collapse .btns .btn:nth-child(2):hover {
   background: hsl(0, 0%, 8%) !important;
@@ -40,6 +41,7 @@ html body .intro-section .intro .intro-text .text .learn-btn {
   width: 165px;
   height: 55px;
   border-radius: 15px;
+  font-weight: 700;
 }
 html body .intro-section .intro .intro-text .text .learn-btn:hover {
   background: hsl(0, 0%, 98%) !important;

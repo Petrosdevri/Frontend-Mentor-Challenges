@@ -27,9 +27,10 @@ html body {
             }
             .container-fluid .collapse .btns {
                 .btn {
+                    width: 110px;
+                    height: 45px;
                     border-radius: 15px !important;
                     color: $grey !important;
-                    height: 45px;
                 }
                 .btn:nth-child(2) {
                     &:hover {
@@ -58,6 +59,7 @@ html body {
                         width: 165px;
                         height: 55px;
                         border-radius: 15px;
+                        font-weight: 700;
                         &:hover {
                             background: $white !important;
                             color: $black !important;
