@@ -87,8 +87,9 @@ html body .container .stats-card .stats-image .image-overlay::before {
   left: 0;
   width: 100%;
   height: 100%;
+  background-blend-mode: darken !important;
   background-color: hsl(277, 64%, 61%);
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: 2;
 }
 html body .container .stats-card .stats-image .image-overlay img {
