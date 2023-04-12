@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500");
+html body {
+  background: hsl(226, 43%, 10%); /* hsl(235, 46%, 20%) */
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+html body .container {
+  max-width: 768px;
+  border-radius: 14px;
+  padding: 2em;
+  background: hsl(226, 43%, 10%);
+}
+html body .container .time-report {
+  width: 100%;
+  margin-bottom: 1em;
+}
+html body .container .time-report .profile {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(246, 80%, 60%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 1em;
+}
+html body .container .time-report .profile .profile-image {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+html body .container .time-report .profile .profile-name {
+  margin-left: 1em;
+}
+html body .container .time-report .profile .profile-name .profile-report {
+  color: hsl(236, 100%, 87%);
+  display: block;
+  font-size: min(4vmin, 0.85rem + 0.12vmax);
+  font-weight: 300;
+}
+html body .container .time-report .profile .profile-name h1 {
+  font-size: min(6.5vmin, 1.1rem + 1.2vmax);
+  font-weight: 400;
+}
+html body .container .time-report .time-settings-list {
+  position: relative;
+  bottom: 15px;
+  background: hsl(235, 46%, 20%);
+  color: #fff;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+html body .container .time-report .time-settings-list li {
+  color: #fff;
+  list-style: none;
+}
+html body .container .time-report .time-settings-list li a {
+  text-decoration: none;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+html body .container .time-report .time-settings-list li a:focus, html body .container .time-report .time-settings-list li a:hover {
+  color: #fff;
+}
+html body .container .dashboard-container .dashboard-cell {
+  position: relative;
+  width: 100%;
+  margin-bottom: 9em;
+}
+html body .container .dashboard-container .dashboard-cell .image-container {
+  width: 100%;
+  position: relative;
+  height: 3em;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  overflow: hidden;
+}
+html body .container .dashboard-container .dashboard-cell .image-container .img-work {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  height: 3.5em;
+}
+html body .container .dashboard-container .dashboard-cell .work {
+  background: hsl(15, 100%, 70%);
+}
+html body .container .dashboard-container .dashboard-cell .play {
+  background: hsl(195, 74%, 62%);
+}
+html body .container .dashboard-container .dashboard-cell .study {
+  background: hsl(348, 100%, 68%);
+}
+html body .container .dashboard-container .dashboard-cell .exercise {
+  background: hsl(145, 58%, 55%);
+}
+html body .container .dashboard-container .dashboard-cell .social {
+  background: hsl(264, 64%, 52%);
+}
+html body .container .dashboard-container .dashboard-cell .self-care {
+  background: hsl(43, 84%, 65%);
+}
+html body .container .dashboard-container .dashboard-cell .cell {
+  width: 100%;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: hsl(235, 46%, 20%);
+  border-radius: 14px;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.5em;
+  transition: 0.3s ease-in-out;
+}
+html body .container .dashboard-container .dashboard-cell .cell:hover {
+  background: hsl(236, 41%, 34%);
+}
+html body .container .dashboard-container .dashboard-cell .cell .cell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+html body .container .dashboard-container .dashboard-cell .cell .cell-header .header {
+  font-size: min(6vmin, 1rem + 0.12vmax);
+  font-weight: 500;
+}
+html body .container .dashboard-container .dashboard-cell .cell .cell-header .img-ellipsis {
+  cursor: pointer;
+  -webkit-margin-after: 0.75em;
+          margin-block-end: 0.75em;
+}
+html body .container .dashboard-container .dashboard-cell .cell .cell-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: min(2vmin, 0.65rem + 0.12vmax);
+}
+html body .container .dashboard-container .dashboard-cell .cell .cell-stats .work-hours {
+  display: inline-block;
+  font-size: min(10.5vmin, 1.1rem + 1.2vmax);
+  font-weight: 300;
+  margin-bottom: 0.3em;
+  text-align: left;
+}
+html body .container .dashboard-container .dashboard-cell .cell .cell-stats .previous-stats {
+  color: hsl(236, 100%, 87%);
+  font-size: min(3vmin, 0.85rem + 0.12vmax);
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  html body .container {
+    display: flex;
+    width: 90%;
+    max-width: 100%;
+  }
+  html body .time-report {
+    flex-basis: 20%;
+    margin-right: 1.5em;
+  }
+  html body .dashboard-container {
+    flex-basis: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+  html body .cell-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  html body .time-report .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  html body .profile-name {
+    padding: 1em 0;
+    margin: 1em 0;
+  }
+  html body .profile-second-name {
+    display: block;
+  }
+  html body .time-settings-list {
+    flex-direction: column;
+  }
+  html body .time-settings-list li {
+    margin-bottom: 1em;
+  }
+}/*# sourceMappingURL=style.css.map */

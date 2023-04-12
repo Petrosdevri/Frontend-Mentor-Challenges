@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
+
+html body {
+    background: hsl(226, 43%, 10%); /* hsl(235, 46%, 20%) */
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+    .container {
+        max-width: 768px;
+        border-radius: 14px;
+        padding: 2em;
+        background: hsl(226, 43%, 10%);
+
+        .time-report {
+            width: 100%;
+            margin-bottom: 1em;
+
+            .profile {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: hsl(246, 80%, 60%);
+                color: #fff;
+                border-radius: 14px;
+                padding: 1em;
+
+                .profile-image {
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                }
+
+                .profile-name {
+                    margin-left: 1em;
+
+                    .profile-report {
+                        color: hsl(236, 100%, 87%);
+                        display: block;
+                        font-size: min(4vmin, calc(0.85rem + 0.12vmax));
+                        font-weight: 300;
+                    }
+
+                    h1 {
+                        font-size: min(6.5vmin, calc(1.1rem + 1.2vmax));
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .time-settings-list {
+                position: relative;
+                bottom: 15px;
+                background: hsl(235, 46%, 20%);
+                color: #fff;
+                border-bottom-left-radius: 14px;
+                border-bottom-right-radius: 14px;
+                display: flex;
+                justify-content: space-between;
+                padding: 2em;
+
+                li {
+                    color: #fff;
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: hsl(236, 100%, 87%);
+                        font-weight: 300;
+                        transition: 0.3s ease-in-out;
+
+                        &:focus, &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dashboard-container {
+            .dashboard-cell {
+                position: relative;
+                width: 100%;
+                margin-bottom: 9em;
+
+                .image-container{
+                    width: 100%;
+                    position: relative;
+                    height: 3em;
+                    border-top-left-radius: 14px;
+                    border-top-right-radius: 14px;
+                    overflow: hidden;
+
+                    .img-work {
+                        position: absolute;
+                        top: -5px;
+                        right: 15px;
+                        height: 3.5em;
+                    }
+                }
+
+                .work{
+                    background: hsl(15, 100%, 70%);
+                }
+                .play {
+                  background: hsl(195, 74%, 62%);
+                }
+                .study {
+                  background: hsl(348, 100%, 68%);
+                }
+                .exercise {
+                  background: hsl(145, 58%, 55%);
+                }
+                .social {
+                  background: hsl(264, 64%, 52%);
+                }
+                .self-care {
+                  background: hsl(43, 84%, 65%);
+                }
+
+                .cell {
+                    width: 100%;
+                    position: absolute;
+                    top: 35px;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background: hsl(235, 46%, 20%);
+                    border-radius: 14px;
+                    color: #fff;
+                    cursor: pointer;
+                    padding: 1.5em;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover{
+                        background: hsl(236, 41%, 34%);
+                    }
+
+                    .cell-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 1em;
+
+                        .header {
+                            font-size: min(6vmin, calc(1rem + 0.12vmax));
+                            font-weight: 500;
+                        }
+
+                        .img-ellipsis {
+                            cursor: pointer;
+                            margin-block-end: 0.75em;
+                        }
+                    }
+
+                    .cell-stats {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: min(2vmin, calc(0.65rem + 0.12vmax));
+
+                        .work-hours {
+                            display: inline-block;
+                            font-size: min(10.5vmin, calc(1.1rem + 1.2vmax));
+                            font-weight: 300;
+                            margin-bottom: 0.3em;
+                            text-align: left;
+                        }
+
+                        .previous-stats {
+                            color: hsl(236, 100%, 87%);
+                            font-size: min(3vmin, calc(0.85rem + 0.12vmax));
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .container{
+            display: flex;
+            width: 90%;
+            max-width: 100%;
+        }
+        .time-report{
+            flex-basis: 20%;
+            margin-right: 1.5em;
+        }
+        .dashboard-container{
+            flex-basis: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+        }
+        .cell-stats{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .time-report .profile{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .profile-name{
+            padding: 1em 0;
+            margin: 1em 0;
+        }
+        .profile-second-name{
+            display: block;
+        }
+        .time-settings-list{
+            flex-direction: column;
+        }
+        .time-settings-list li{
+            margin-bottom: 1em;
+        }
+    }
+}
