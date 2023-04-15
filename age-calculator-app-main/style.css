@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800");
+html body {
+  color: #141414;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+html body .container {
+  margin: 8em 0;
+}
+html body .container .age-form .input-field .form-label {
+  color: #716f6f;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+html body .container .age-form .input-field .form-input {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 2em;
+  font-weight: 700;
+  width: 130px;
+}
+html body .container .age-form .input-field .error-message {
+  color: #ff5757;
+  font-style: italic;
+}
+html body .container .rounded-circle {
+  width: 70px;
+  height: 70px;
+  background: #854dff;
+  border: none;
+  margin-inline-start: 45em;
+}
+html body .container .rounded-circle:hover {
+  background: #141414;
+}
+@media (max-width: 768px) {
+  html body .container .rounded-circle {
+    margin-inline-start: 0;
+  }
+}
+html body .container .age-output .output {
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 800;
+}
+html body .container .age-output .output span {
+  color: #854dff;
+}

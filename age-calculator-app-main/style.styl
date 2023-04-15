@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800')
+
+html body
+    color: hsl(0, 0%, 8%)
+    font-family: 'Poppins', sans-serif
+    font-size: 16px
+    font-weight: 400
+
+    .container
+        margin: 8em 0;
+
+        .age-form
+            .input-field
+                .form-label
+                    color: hsl(0, 1%, 44%)
+                    font-size: 0.8em
+                    font-weight: 700
+                    letter-spacing: 3px
+
+                .form-input
+                    border: 1px solid hsl(0, 0%, 86%)
+                    border-radius: 4px
+                    font-size: 2em
+                    font-weight: 700
+                    width: 130px
+
+                .error-message
+                    color: hsl(0, 100%, 67%)
+                    font-style: italic
+
+        .rounded-circle
+            width: 70px
+            height: 70px
+            background: hsl(259, 100%, 65%)
+            border: none
+            margin-inline-start: 45em
+
+            &:hover
+                background: hsl(0, 0%, 8%)
+
+            @media (max-width: 768px)
+                margin-inline-start: 0
+
+        .age-output
+            .output
+                font-size: 4em
+                font-style: italic
+                font-weight: 800
+
+                span
+                    color: hsl(259, 100%, 65%)
